@@ -1,4 +1,4 @@
-var url = "http://192.168.118.23:8080/"
+var url = "https://192.168.118.23:8080/"
 // var url = "https://068b-154-159-237-233.ngrok-free.app/"
 
 function saveData(data){
