@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner</title>
+
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background: linear-gradient(to right, #2cccb4, #1b85c9, #3b3bec);
+            text-align: center;
+        }
+        .form{
+            background: linear-gradient(rgba(222, 88, 155, 0.5), rgba(218, 14, 68, 0.5));
+            padding: 40px;
+            margin: 20px;
+            width: auto;
+        }
+        input{
+            padding: 15px;
+            margin: 10px;
+            font-size: 16px;
+            outline: none;
+            border: brown 1px solid;
+            border-radius: 5px;
+        }
+        button{
+            padding: 15px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+
+        }
+        .scanner{
+            width: 50%;
+            position: relative;
+        }
+        .results{
+            position: absolute;
+        background: beige
+        }
+@media screen and (max-width: 400px) {
+    .scanner{
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button class="back">BACK</button>
+        <button onclick="return reload()" class="resume">Resume</button>
+    </div>
+    <hr>
+ <div class="scanner">
+    <main>
+        <div id="reader"></div>
+
+    </main>
+
+ </div>
+    <h1>Company</h1>
+    <div class="results">
+
+
+    </div>
+ <!-- <audio src="../voices/accessgranted.mp3" class="granted" hidden></audio>
+ <audio src="../voices/accessdenied.mp3" class="denied" hidden></audio> -->
+    <script src="./node_modules/html5-qrcode/html5-qrcode.min.js"></script>
+    <script src="./Utils.js"></script>
+    <script src="./jquery-3.7.1.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
